@@ -53,12 +53,6 @@ body{
     transition: all .4s ease-in-out;
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-    color:inherit;
-    font-family: inherit;
-}
 
 header{
     height: 100vh;
@@ -114,6 +108,33 @@ input, textarea{
     margin-right:1rem;
     width:100%;
     resize: none;
+}
+
+h2{
+    margin:auto;
+}
+
+.Centered-Box{
+    margin: auto;
+    text-align: center;
+    padding: 2vw;
+}
+
+.Button{
+    margin: auto;
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 2vw;
+    width: fit-content;
+    &:hover{
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+}
+
+a{
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 
