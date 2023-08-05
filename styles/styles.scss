@@ -137,4 +137,31 @@ a{
     text-decoration: none;
 }
 
+.CircleContainer{
+    background-color: var(--color-secondary);
+    width: fit-content;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    padding:5vw;
+}
+
+.CircleButton{
+        margin: auto;
+        background-color: var(--color-tertiary);
+        text-align: center;
+        padding: 1vw;
+        width: min-content;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        p{
+            margin-top: 30%;
+        }
+        
+        &:hover{
+            background-color: var(--color-white);
+            color: var(--color-black);
+    }
+}
+
+
 
