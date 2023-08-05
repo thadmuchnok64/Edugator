@@ -11,6 +11,8 @@
   --color-frame:#2c2335;
   --color-secondary: #AA96BE;
   --color-tertiary: #514570;
+  --color-4: #ac956a;
+  --color-5: #a56e8a;
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-button: #46325A;
@@ -109,12 +111,16 @@ input, textarea {
 
 h2 {
   margin: auto;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .Centered-Box {
   margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
-  padding: 2vw;
+  padding: 1vw;
 }
 
 .Button {
@@ -135,8 +141,30 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 1vw;
+}
+
 .CircleContainer {
   background-color: var(--color-secondary);
+  width: -moz-fit-content;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  padding: 5vw;
+}
+
+.CircleContainer-2 {
+  background-color: var(--color-4);
+  width: -moz-fit-content;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  padding: 5vw;
+}
+
+.CircleContainer-3 {
+  background-color: var(--color-5);
   width: -moz-fit-content;
   width: fit-content;
   aspect-ratio: 1/1;
@@ -149,8 +177,8 @@ a {
   background-color: var(--color-tertiary);
   text-align: center;
   padding: 1vw;
-  width: -moz-min-content;
-  width: min-content;
+  width: -moz-fit-content;
+  width: fit-content;
   aspect-ratio: 1/1;
   border-radius: 100%;
 }
@@ -160,4 +188,9 @@ a {
 .CircleButton:hover {
   background-color: var(--color-white);
   color: var(--color-black);
+  transition: all 0.1s ease-in-out;
+}
+.CircleButton:hover p {
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
