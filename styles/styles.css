@@ -193,6 +193,53 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
+.SquareButton {
+  margin: auto;
+  background-color: var(--color-tertiary);
+  text-align: center;
+  padding: 1vw;
+  height: 140px;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
+.SquareButton p {
+  margin-top: 30%;
+}
+.SquareButton:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all 0.1s ease-in-out;
+}
+.SquareButton:hover p {
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.RectangleButton{
+  margin:  auto;
+  background-color: var(--color-tertiary);
+  text-align: center;
+  padding: 15px;
+  height: 160px;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  border-radius: 0;
+}
+
+.RectangleButton p {
+  margin-top: 30%;
+}
+.RectangleButton:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all 0.1s ease-in-out;
+}
+.RectangleButton:hover p {
+  font-size: 1.2vw;
+  transition: all 0.3s ease-in-out;
+}
+
 .Banner {
   background-color: var(--color-tertiary);
   padding: 2vw;
