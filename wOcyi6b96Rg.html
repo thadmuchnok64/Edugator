@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-content">
+  <div class ="LoginBanner">
+    <div class ="RightDiv">
+        <div class="PictureFrame">
+            <img src="img/Portrait_Placeholder.png">
+    </div>
+</div>
+<div class = "RightDiv">
+    <h3 style="margin-top: 1vh;">Logged in as STUDENT</h3>
+</div>
+</div>
+    <div class="Banner2">
+        <H1>MAC2313</H1>
+    </div>
+
+
+    <div class = playbackSettings>
+    
+      <h2>Video Speed</h2>
+        
+        <form>
+        <button onclick = "speed(0.75)" class = "playback" type = button>75%</button>
+        <button onclick = "speed(1)" class = "playback" type = button>100% </button>
+        <button onclick = "speed(1.25)" class = "playback" type = button>125% </button>
+        </form>
+    </div>   
+
+    <div class="Centered-Box">
+       
+        <div id="player"></div>
+        
+
+
+        <div class="Key">
+            Key Timestamps
+        </div>
+        <form>
+        <button onclick = "jump(511)" class = "timestamp" type = button>3D Coordinates Notes (8:31)</button>
+        <button onclick = "jump(810)" class = "timestamp" type = button>Plotting Points Practice (13:30)</button>
+        <button onclick = "jump(1655)" class = "timestamp" type = button>Spheres Notes (27:35)</button>
+        </form>
+
+        <script>
+
+            
+    
+          var tag = document.createElement('script');
+    
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          
+            
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              height: '670',
+              width: '1100',
+              videoId: 'wOcyi6b96Rg',
+              playerVars: {'playsinline': 1, 'enablejsapi': 1, 'autoplay': 1, 'controls': 1, 'modestbranding': 1, 'start': 0},
+              
+            });
+          }
+
+          function jump(s) 
+          {
+            player.seekTo(s, true);
+          }
+
+          function speed(s) 
+          {
+            player.setPlaybackRate(s);
+          }
+
+        </script>
+        
+    </div>
+
+    <a href="Lecture.html">
+      <div class = "nextButton"><h2>Next Lecture</h2></div>
+
+    </a>
+</body>
+
+
+</html>

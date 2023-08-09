@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-content">
+    <div class="Banner">
+        <h1>Calendar</h1>
+    </div>
+    <div id="calendar" class="Centered-Box">
+        <!-- The calendar content will be generated dynamically by calendar.js -->
+    </div>
+
+    <div id="zoomed-in-date" class="ZoomedInDateContainer">
+        <button id="exit-button" class="ExitButton">X</button>
+        <p id="date-content">Zoomed in on date: </p>
+        <p id="event-list">Event:</p>
+    </div>
+
+    <div class="EventForm">
+        <h3>Add Event</h3>
+        <form id="event-form">
+            <label for="event-date">Date:</label>
+            <input type="number" id="event-date" min="1" max="31" required>
+
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" required>
+
+            <button type="submit" id="add-button">Add</button>
+        </form>
+    </div>
+    <button id="clear-events-button">Clear Events</button>
+    <!-- Include the navigation bar -->
+    <div class="bottom-left-navigation">
+        <div class="Navigation">
+            <a href="calendar.html">
+                <div class="SquareButton">
+                    <p>Calendar</p>
+                </div>
+            </a>
+            <a href="classes.html">
+                <div class="SquareButton">
+                    <p>Cluster Map</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Import the JavaScript file -->
+    <script src="calendar.js"></script>
+</body>
+
+</html>
