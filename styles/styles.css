@@ -949,3 +949,33 @@ td.today {
   /* You can customize the dot color for events */
   border-radius: 50%;
 }
+
+.Logo{
+  float: left;
+  position:absolute; left:0; top:100;
+
+}
+
+.Logo .GatorOpen{
+  position: absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:99;
+}
+
+.Logo:hover .GatorOpen{
+  display:inline;
+}
+
+.Logo .GatorClose{
+  display:inline;
+}
+
+.Logo:hover .GatorClose{
+  position: absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:99;
+}
