@@ -269,6 +269,37 @@ p {
   vertical-align: middle;
 }
 
+.LogoutFade{
+  margin-top: 1vh; margin-right: 0vw;
+  margin-left: 0;
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -o-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+
+.RightDiv:hover .LogoutFade{
+  margin-top: 1vh; margin-right: 1vw;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  transition: all 0.1s ease-in-out;
+
+}
+
+.LogoutFade:hover{
+  color:var(--color-5);
+  transition: all 0.1s ease-in-out;
+}
+
+
+.Navigation{
+  display: table-cell;
+  margin: auto;
+}
+
 .PictureFrame{
   background-color: var(--color-5);
     height: 100%;
