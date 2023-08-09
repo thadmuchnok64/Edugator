@@ -360,3 +360,38 @@ h3{
   min-height: 30px;
   min-width: 30px;
 }
+
+.dropbtn {
+  background-color: var(--color-tertiary);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: var(--color-tertiary);
+  min-width: 40;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: var(--color-tertiary);}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color-tertiary);
+}
+
+
